@@ -20,7 +20,7 @@ export function Header() {
     <header className="absolute inset-x-0 top-0 z-40">
       <div className="mx-auto flex max-w-[1594px] items-center justify-between gap-6 px-4 pt-6 sm:px-6 md:pt-8">
         <Link href="/" aria-label="AI Marketing LABZ home" className="shrink-0">
-          <Photo src="/images/logo.svg" alt="AI Marketing LABZ" width={69} height={61} priority />
+          <Photo src="/images/logo.png" alt="AI Marketing LABZ" width={69} height={61} priority />
         </Link>
 
         <nav aria-label="Main" className="hidden lg:block">
@@ -37,7 +37,7 @@ export function Header() {
 
         <div className="flex items-center gap-6 md:gap-9">
           <button type="button" className="hidden items-center gap-2 text-xl sm:flex" lang="ar" dir="rtl" title="Arabic version coming soon">
-            <Photo src="/images/flag-kw.svg" alt="" width={48} height={26} />
+            <Photo src="/images/flag-kw.png" alt="" width={48} height={26} />
             العربية
           </button>
           <button
@@ -65,7 +65,7 @@ export function Header() {
             }}
           >
             <div className="flex items-center justify-between">
-              <Photo src="/images/logo.svg" alt="AI Marketing LABZ" width={69} height={61} />
+              <Photo src="/images/logo.png" alt="AI Marketing LABZ" width={69} height={61} />
               <button type="button" onClick={() => setOpen(false)} aria-label="Close menu" className="p-1 hover:text-brand">
                 <X className="size-9" />
               </button>

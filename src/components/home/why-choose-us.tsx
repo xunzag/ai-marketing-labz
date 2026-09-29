@@ -23,7 +23,7 @@ const reasons = [
 export function WhyChooseUs() {
   return (
     <section className="relative isolate overflow-hidden border-y border-white/60 py-16 md:py-20">
-      <Photo src="/images/why-bg.svg" alt="" fill sizes="100vw" className="-z-10 object-cover opacity-15" />
+      <Photo src="/images/why-bg.jpg" alt="" fill sizes="100vw" className="-z-10 object-cover opacity-15" />
       <div className="mx-auto max-w-[1320px] px-4 sm:px-6">
         <div className="mx-auto max-w-[1158px] text-center">
           <SectionTitle>
@@ -50,7 +50,7 @@ export function WhyChooseUs() {
               </li>
             ))}
           </ul>
-          <FramedPhoto src="/images/why-photo.svg" alt="Team collaborating around laptops" />
+          <FramedPhoto src="/images/why-photo.jpg" alt="Team collaborating around laptops" />
         </div>
       </div>
     </section>

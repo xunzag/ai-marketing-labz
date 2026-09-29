@@ -25,9 +25,11 @@ npm run lint
 
 The four industry pages share one template (`src/app/solutions/[slug]/page.tsx`); their copy lives in `src/lib/industries.ts`. Shared copy (contact details, stats, testimonials) is in `src/lib/site.ts`.
 
-## Images are placeholders
+## Images
 
-The photos, logo, client logos and avatars in `public/images/` are generated stand-ins (`node scripts/placeholders.mjs`), because Figma's asset downloads weren't reachable when this was built. To use the real ones, export each image from Figma and drop it into `public/images/` under the same name. If the export is a `.jpg`/`.png`, update the matching path in the code (search for the file name).
+The photos, logo, flag, industry icons and avatars in `public/images/` are the real images from the Figma file, resized for the web. They are named after where they appear (for example `hero-real-estate.jpg`, `medical-3.jpg` for the third solution block).
+
+The client logos (`client-*.svg`) are still stand-ins made by `node scripts/placeholders.mjs`, because the design only has generic "logoipsum" logos there. Drop in real client logos under the same names when you have them.
 
 ## Contact form
 

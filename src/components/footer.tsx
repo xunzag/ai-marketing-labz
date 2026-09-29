@@ -17,7 +17,7 @@ export function Footer() {
     <footer className="bg-black font-poppins">
       <div className="mx-auto grid max-w-[1600px] gap-12 px-4 pt-16 pb-12 sm:px-6 md:grid-cols-2 xl:grid-cols-[1.4fr_0.9fr_1.3fr_0.8fr] xl:gap-8">
         <div className="flex flex-col items-center text-center md:items-start md:text-left xl:pl-10">
-          <Photo src="/images/logo.svg" alt="AI Marketing LABZ" width={219} height={194} className="h-auto w-44 md:w-[219px]" />
+          <Photo src="/images/logo.png" alt="AI Marketing LABZ" width={219} height={194} className="h-auto w-44 md:w-[219px]" />
           <p className="mt-6 max-w-[384px] text-lg md:text-[21.5px]">
             Learn more about our mission, values, and the team dedicated to driving your digital success.
           </p>

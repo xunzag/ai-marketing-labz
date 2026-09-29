@@ -12,7 +12,7 @@ import { WhyChooseUs } from "@/components/home/why-choose-us";
 export default function Home() {
   return (
     <>
-      <PageHero image="/images/hero-home.svg" overlay="bg-black/40">
+      <PageHero image="/images/hero-home.jpg" overlay="bg-black/40">
         <p className="inline-block rounded bg-brand px-4 py-1 text-lg font-semibold md:px-5 md:text-[30px] md:leading-[50px]">
           Your All-In-One Marketing Solutions Expert
         </p>
@@ -25,7 +25,7 @@ export default function Home() {
       <LogoStrip />
       <WhoWeAre />
 
-      <CtaBanner image="/images/banner-city.svg">
+      <CtaBanner image="/images/banner-city.jpg">
         <h2 className="text-3xl font-extrabold uppercase leading-tight md:text-[45px]">
           AI-Powered <span className="text-brand">Digital Marketing</span>
           <br />

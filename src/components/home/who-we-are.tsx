@@ -6,7 +6,7 @@ export function WhoWeAre() {
   return (
     <section className="py-16 md:py-24">
       <div className="mx-auto grid max-w-[1320px] items-center gap-14 px-4 sm:px-6 lg:grid-cols-[minmax(0,671px)_minmax(0,497px)] lg:justify-between lg:gap-10">
-        <ImageStack src="/images/who-we-are.svg" alt="AI-powered marketing dashboards over a laptop" />
+        <ImageStack src="/images/who-we-are.jpg" alt="AI-powered marketing dashboards over a laptop" />
         <div>
           <SectionTitle>
             Who <span className="text-brand">We Are</span>

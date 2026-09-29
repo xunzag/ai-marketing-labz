@@ -24,7 +24,7 @@ const services = [
 export default function AboutPage() {
   return (
     <>
-      <PageHero image="/images/hero-about.svg" overlay="bg-black/70">
+      <PageHero image="/images/hero-about.jpg" overlay="bg-black/70">
         <p className="text-2xl font-semibold text-brand md:text-3xl">About us</p>
         <h1 className="mx-auto mt-4 max-w-[929px] text-4xl font-semibold uppercase leading-tight sm:text-5xl xl:text-[62px]">
           Transforming Brands <span className="text-brand">with Strategy</span> &amp; Creativity
@@ -40,7 +40,7 @@ export default function AboutPage() {
 
       <section className="py-16 md:py-24">
         <div className="mx-auto grid max-w-[1320px] items-center gap-14 px-4 sm:px-6 lg:grid-cols-[minmax(0,671px)_minmax(0,497px)] lg:justify-between lg:gap-10">
-          <ImageStack src="/images/about-main.svg" alt="The AI Marketing Labz team" />
+          <ImageStack src="/images/about-main.jpg" alt="The AI Marketing Labz team" />
           <div>
             <SectionTitle>
               About <span className="text-brand">us</span>
@@ -60,16 +60,16 @@ export default function AboutPage() {
       <Statement
         title="Our Mission"
         body="To empower businesses in the UAE and beyond with innovative marketing solutions that drive sustainable growth and long-term brand success."
-        image="/images/about-mission.svg"
+        image="/images/about-mission.jpg"
       />
       <Statement
         title="Our Vision"
         body="To become a leading marketing partner known for creativity, transparency, and results-driven performance across the Middle East and global markets."
-        image="/images/about-vision.svg"
+        image="/images/about-vision.jpg"
         reversed
       />
 
-      <CtaBanner image="/images/banner-about.svg">
+      <CtaBanner image="/images/banner-about.jpg">
         <h2 className="text-3xl font-extrabold uppercase leading-tight md:text-[45px]">
           Let’s Build Something
           <br />
@@ -87,7 +87,7 @@ export default function AboutPage() {
 
       <section className="py-16 md:py-24">
         <div className="mx-auto grid max-w-[1320px] items-center gap-12 px-4 sm:px-6 lg:grid-cols-[541px_minmax(0,698px)] lg:justify-between">
-          <FramedPhoto src="/images/about-approach.svg" alt="Our team planning a campaign" />
+          <FramedPhoto src="/images/about-approach.jpg" alt="Our team planning a campaign" />
           <div>
             <SectionTitle>
               What We Do <span className="text-brand">Best</span>

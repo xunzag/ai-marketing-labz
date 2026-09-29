@@ -27,21 +27,21 @@ export const testimonials = [
     body: "Working with Bright Digital Agency has been a game-changer for our brand. Their creative approach and attention to detail transformed our online presence, leading to a significant increase in engagement and sales. The team is not only talented but also genuinely cares about our success. Highly recommend!",
     name: "Jake Nackos",
     role: "Marketing Director EcoBrands",
-    avatar: "/images/avatar-1.svg",
+    avatar: "/images/avatar-1.jpg",
   },
   {
     title: "Innovative Solutions That Deliver!",
     body: "Bright Digital Agency exceeded our expectations in every way. They took the time to understand our vision and delivered innovative solutions that helped us stand out in a competitive market. Their support throughout the process was invaluable. We're thrilled with the results and look forward to our continued partnership!",
     name: "Michael Lee",
     role: "Founder TechSavvy Solutions",
-    avatar: "/images/avatar-2.svg",
+    avatar: "/images/avatar-2.jpg",
   },
   {
     title: "Transforming Our Online Presence!",
     body: "Working with Bright Digital Agency has been a game-changer for our brand. Their creative approach and attention to detail transformed our online presence, leading to a significant increase in engagement and sales. The team is not only talented but also genuinely cares about our success. Highly recommend!",
     name: "Sarah Johnson",
     role: "Marketing Director EcoBrands",
-    avatar: "/images/avatar-3.svg",
+    avatar: "/images/avatar-3.jpg",
   },
 ];
 

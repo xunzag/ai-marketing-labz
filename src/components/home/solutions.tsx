@@ -1,14 +1,7 @@
 import Link from "next/link";
-import { Car, GraduationCap, Hospital, House, type LucideIcon } from "lucide-react";
+import { Photo } from "../photo";
 import { CheckIcon, SectionTitle } from "../ui";
 import { industries } from "@/lib/industries";
-
-const icons: Record<string, LucideIcon> = {
-  "real-estate": House,
-  medical: Hospital,
-  education: GraduationCap,
-  automotive: Car,
-};
 
 export function Solutions() {
   return (
@@ -26,10 +19,9 @@ export function Solutions() {
 
         <ul className="mt-12 grid gap-8 sm:grid-cols-2 xl:mt-20 xl:grid-cols-4 xl:gap-10">
           {industries.map((industry) => {
-            const Icon = icons[industry.slug];
             return (
               <li key={industry.slug} className="flex flex-col rounded-[8.5px] bg-white px-6 pt-8 pb-6 font-poppins text-[#101010] shadow-[-1px_4px_4px_rgba(0,0,0,0.28)]">
-                <Icon className="mx-auto size-20" strokeWidth={1.5} aria-hidden />
+                <Photo src={`/images/icon-${industry.slug}.png`} alt="" width={112} height={83} className="mx-auto h-[83px] w-auto" />
                 <h3 className="mt-6 text-center font-sans text-xl font-semibold leading-tight">{industry.cardTitle}</h3>
                 <p className="mt-1 text-center text-[12.7px] font-semibold">{industry.tagline}</p>
                 <ol className="mt-5 space-y-2.5 text-[12.7px] font-semibold">

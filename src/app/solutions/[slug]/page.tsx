@@ -29,7 +29,7 @@ export default async function IndustryPage({ params }: PageProps<"/solutions/[sl
 
   return (
     <>
-      <PageHero image={`/images/hero-${slug}.svg`} overlay="bg-black/80">
+      <PageHero image={`/images/hero-${slug}.jpg`} overlay="bg-black/80">
         <h1 className="mx-auto max-w-[1269px] text-4xl font-semibold uppercase leading-tight sm:text-5xl xl:text-[62px]">
           {hero.before} <span className="text-brand-dark">{hero.highlight}</span> {hero.after}
         </h1>
@@ -44,7 +44,7 @@ export default async function IndustryPage({ params }: PageProps<"/solutions/[sl
       <section className="py-16 md:py-24">
         <div className="mx-auto grid max-w-[1320px] items-center gap-12 px-4 sm:px-6 lg:grid-cols-[minmax(0,710px)_minmax(0,508px)] lg:justify-between">
           <div className="relative aspect-[710/408] overflow-hidden rounded-[14px] border-[5px] border-white">
-            <Photo src={`/images/overview-${slug}.svg`} alt="" fill sizes="(min-width: 1024px) 710px, 100vw" className="object-cover" />
+            <Photo src={`/images/overview-${slug}.jpg`} alt="" fill sizes="(min-width: 1024px) 710px, 100vw" className="object-cover" />
           </div>
           <div>
             <p className="text-xl">Overview</p>
@@ -62,7 +62,7 @@ export default async function IndustryPage({ params }: PageProps<"/solutions/[sl
       </div>
 
       {industry.solutions.map((block, i) => (
-        <SolutionBlock key={block.title} block={block} image={`/images/${slug}-${i + 1}.svg`} reversed={i % 2 === 1} />
+        <SolutionBlock key={block.title} block={block} image={`/images/${slug}-${i + 1}.jpg`} reversed={i % 2 === 1} />
       ))}
 
       <Stats />
