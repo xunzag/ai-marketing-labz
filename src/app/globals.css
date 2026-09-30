@@ -78,27 +78,25 @@ body {
   transform: translateY(0);
 }
 
-/* Sections fade up as they scroll into view, where the browser supports scroll-driven
-   animations; elsewhere they simply show. */
-@supports (animation-timeline: view()) {
-  @keyframes reveal {
-    from {
-      opacity: 0;
-      transform: translateY(48px);
-    }
-  }
-  main section > :not(.absolute, img, .animate-marquee) {
-    animation: reveal linear both;
-    animation-timeline: view();
-    animation-range: entry 0% entry 35%;
-  }
+/* Sections fade up as they scroll into view (classes set by components/reveal.tsx). */
+.reveal {
+  opacity: 0;
+  transform: translateY(48px);
+  transition:
+    opacity 0.8s ease-out,
+    transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
 }
 
 @media (prefers-reduced-motion: reduce) {
   .btn-fill::before {
     transition: none;
   }
-  main section > * {
-    animation: none !important;
+  .animate-hero-zoom,
+  .animate-dot-slide {
+    animation: none;
   }
 }

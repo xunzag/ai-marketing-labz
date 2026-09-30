@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Jost, Poppins } from "next/font/google";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
+import { Reveal } from "@/components/reveal";
 import "./globals.css";
 
 const jost = Jost({
@@ -32,6 +33,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
+        <Reveal />
       </body>
     </html>
   );
