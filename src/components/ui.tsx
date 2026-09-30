@@ -27,12 +27,12 @@ export function DiscussButton({ href = "/contact", label = "Let’s Discuss" }: 
   return (
     <Link
       href={href}
-      className="group inline-flex h-12 items-center gap-3 rounded-[5px] border-[1.5px] border-white px-3 text-lg font-semibold text-white shadow-[0_6px_0_-2px_#0082a8] transition hover:bg-white/10 md:h-[57px] md:text-2xl"
+      className="btn-fill inline-flex h-12 items-center gap-3 rounded-[5px] border-[1.5px] border-white px-3 text-lg font-semibold text-white md:h-[57px] md:text-2xl"
     >
       {label}
-      <span className="flex w-20 items-center md:w-28" aria-hidden>
-        <span className="size-2 shrink-0 rounded-full bg-white transition-transform group-hover:translate-x-2" />
-        <span className="h-px flex-1 bg-white" />
+      <span className="relative flex h-2 w-20 items-center md:w-28" aria-hidden>
+        <span className="h-px w-full bg-white" />
+        <span className="absolute top-0 left-0 size-2 animate-dot-slide rounded-full bg-white" />
       </span>
     </Link>
   );
@@ -43,7 +43,7 @@ export function OutlineButton({ href, children }: { href: string; children: Reac
   return (
     <Link
       href={href}
-      className="inline-flex h-12 min-w-[200px] items-center justify-center rounded-[4px] border-[1.5px] border-white px-8 text-lg font-semibold text-brand shadow-[0_6px_0_-2px_#0082a8] transition hover:bg-white hover:text-brand-dark md:h-[57px] md:min-w-[248px] md:text-2xl"
+      className="btn-fill inline-flex h-12 min-w-[200px] items-center justify-center rounded-[4px] border-[1.5px] border-white px-8 text-lg font-semibold text-brand transition-colors duration-500 hover:text-white md:h-[57px] md:min-w-[248px] md:text-2xl"
     >
       {children}
     </Link>

@@ -61,7 +61,7 @@ export function ContactForm() {
         <button
           type="submit"
           disabled={status.kind === "sending"}
-          className="h-[52px] w-[224px] shrink-0 rounded-[4px] border-[1.4px] border-white text-[21.5px] font-semibold text-brand shadow-[0_6px_0_-2px_#0082a8] transition hover:bg-white hover:text-brand-dark disabled:opacity-60 sm:ml-auto"
+          className="btn-fill h-[52px] w-[224px] shrink-0 rounded-[4px] border-[1.4px] border-white text-[21.5px] font-semibold text-brand transition-colors duration-500 hover:text-white disabled:opacity-60 sm:ml-auto"
         >
           {status.kind === "sending" ? "Sending…" : "Get A Touch"}
         </button>

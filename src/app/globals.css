@@ -14,7 +14,9 @@
   --font-sans: var(--font-jost), ui-sans-serif, system-ui, sans-serif;
   --font-poppins: var(--font-poppins), ui-sans-serif, system-ui, sans-serif;
 
-  --animate-marquee: marquee 40s linear infinite;
+  --animate-marquee: marquee 30s linear infinite;
+  --animate-dot-slide: dot-slide 1s ease-in-out infinite alternate;
+  --animate-hero-zoom: hero-zoom 8s ease-out both;
 
   @keyframes marquee {
     from {
@@ -22,6 +24,26 @@
     }
     to {
       transform: translateX(-50%);
+    }
+  }
+
+  /* The dot on "Let's Discuss" gliding along its line (Figma "icon slide" loop). */
+  @keyframes dot-slide {
+    from {
+      left: 0;
+    }
+    to {
+      left: calc(100% - 0.5rem);
+    }
+  }
+
+  /* Hero photos settle in from a slight zoom (Figma hero smart-animate). */
+  @keyframes hero-zoom {
+    from {
+      transform: scale(1.12);
+    }
+    to {
+      transform: scale(1);
     }
   }
 }
@@ -33,4 +55,50 @@ html {
 body {
   background: #000;
   color: #fff;
+}
+
+/* Big buttons: a blue fill rises from the bottom edge on hover, as in the Figma
+   "Let's Discuss" / "Get A Quote" hover variants. At rest only a 4px strip shows. */
+.btn-fill {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+.btn-fill::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: var(--color-brand-dark);
+  transform: translateY(calc(100% - 4px));
+  transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.btn-fill:hover::before,
+.btn-fill:focus-visible::before {
+  transform: translateY(0);
+}
+
+/* Sections fade up as they scroll into view, where the browser supports scroll-driven
+   animations; elsewhere they simply show. */
+@supports (animation-timeline: view()) {
+  @keyframes reveal {
+    from {
+      opacity: 0;
+      transform: translateY(48px);
+    }
+  }
+  main section > :not(.absolute, img, .animate-marquee) {
+    animation: reveal linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 35%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn-fill::before {
+    transition: none;
+  }
+  main section > * {
+    animation: none !important;
+  }
 }

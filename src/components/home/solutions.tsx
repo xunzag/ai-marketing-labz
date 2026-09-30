@@ -20,7 +20,7 @@ export function Solutions() {
         <ul className="mt-12 grid gap-8 sm:grid-cols-2 xl:mt-20 xl:grid-cols-4 xl:gap-10">
           {industries.map((industry) => {
             return (
-              <li key={industry.slug} className="flex flex-col rounded-[8.5px] bg-white px-6 pt-8 pb-6 font-poppins text-[#101010] shadow-[-1px_4px_4px_rgba(0,0,0,0.28)]">
+              <li key={industry.slug} className="flex flex-col rounded-[8.5px] bg-white px-6 pt-8 pb-6 font-poppins text-[#101010] shadow-[-1px_4px_4px_rgba(0,0,0,0.28)] transition duration-300 hover:-translate-y-2 hover:shadow-[0_14px_30px_rgba(7,175,202,0.35)]">
                 <Photo src={`/images/icon-${industry.slug}.png`} alt="" width={112} height={83} className="mx-auto h-[83px] w-auto" />
                 <h3 className="mt-6 text-center font-sans text-xl font-semibold leading-tight">{industry.cardTitle}</h3>
                 <p className="mt-1 text-center text-[12.7px] font-semibold">{industry.tagline}</p>
