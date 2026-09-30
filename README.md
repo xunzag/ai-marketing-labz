@@ -29,7 +29,7 @@ The four industry pages share one template (`src/app/solutions/[slug]/page.tsx`)
 
 The photos, logo, flag, industry icons and avatars in `public/images/` are the real images from the Figma file, resized for the web. They are named after where they appear (for example `hero-real-estate.jpg`, `medical-3.jpg` for the third solution block).
 
-The client logos (`client-*.svg`) are still stand-ins made by `node scripts/placeholders.mjs`, because the design only has generic "logoipsum" logos there. Drop in real client logos under the same names when you have them.
+The client logos (`client-*.svg`) are the ones in the Figma file, which are generic "logoipsum" marks. Replace them with real client logos under the same names when you have them.
 
 ## Contact form
 
