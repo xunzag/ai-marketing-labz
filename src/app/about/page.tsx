@@ -24,12 +24,12 @@ const services = [
 export default function AboutPage() {
   return (
     <>
-      <PageHero image="/images/hero-about.jpg" overlay="bg-black/70">
+      <PageHero image="/images/hero-about.jpg" dim={0.7}>
         <p className="text-2xl font-semibold text-brand md:text-3xl">About us</p>
-        <h1 className="mx-auto mt-4 max-w-[929px] text-4xl font-semibold uppercase leading-tight sm:text-5xl xl:text-[62px]">
+        <h1 className="mx-auto mt-4 max-w-[58.0625rem] text-4xl font-semibold uppercase leading-tight sm:text-5xl xl:text-[3.875rem]">
           Transforming Brands <span className="text-brand">with Strategy</span> &amp; Creativity
         </h1>
-        <p className="mx-auto mt-6 max-w-[1047px] text-lg md:text-[28px] md:leading-snug">
+        <p className="mx-auto mt-6 max-w-[65.4375rem] text-lg md:text-[1.75rem] md:leading-snug">
           AI Marketing Labz is a UAE-based full-service marketing agency helping businesses grow through intelligent digital strategies,
           powerful branding, and impactful traditional marketing.
         </p>
@@ -39,13 +39,13 @@ export default function AboutPage() {
       </PageHero>
 
       <section className="py-16 md:py-24">
-        <div className="mx-auto grid max-w-[1320px] items-center gap-14 px-4 sm:px-6 lg:grid-cols-[minmax(0,671px)_minmax(0,497px)] lg:justify-between lg:gap-10">
+        <div className="mx-auto grid max-w-[82.5rem] items-center gap-14 px-4 sm:px-6 lg:grid-cols-[minmax(0,671px)_minmax(0,497px)] lg:justify-between lg:gap-10">
           <ImageStack src="/images/about-main.jpg" alt="The AI Marketing Labz team" />
           <div>
             <SectionTitle>
               About <span className="text-brand">us</span>
             </SectionTitle>
-            <div className="mt-6 space-y-4 text-lg md:text-[25px] md:leading-snug">
+            <div className="mt-6 space-y-4 text-lg md:text-[1.5625rem] md:leading-snug">
               <p>AI Marketing Labz is a modern marketing agency built to bridge the gap between creativity and performance.</p>
               <p>
                 Based in the UAE, we work with startups, growing businesses, and established enterprises to create marketing systems
@@ -70,12 +70,12 @@ export default function AboutPage() {
       />
 
       <CtaBanner image="/images/banner-about.jpg">
-        <h2 className="text-3xl font-extrabold uppercase leading-tight md:text-[45px]">
+        <h2 className="text-3xl font-extrabold uppercase leading-tight md:text-[2.8125rem]">
           Let’s Build Something
           <br />
           <span className="text-brand">Powerful</span> Together
         </h2>
-        <p className="max-w-[964px] text-lg font-semibold md:text-[30px] md:leading-snug">
+        <p className="max-w-[60.25rem] text-lg font-semibold md:text-[1.875rem] md:leading-snug">
           Whether you&apos;re launching a new brand or scaling an existing business, AI Marketing Labz is your trusted marketing partner
           in the UAE.
         </p>
@@ -86,7 +86,7 @@ export default function AboutPage() {
       </CtaBanner>
 
       <section className="py-16 md:py-24">
-        <div className="mx-auto grid max-w-[1320px] items-center gap-12 px-4 sm:px-6 lg:grid-cols-[541px_minmax(0,698px)] lg:justify-between">
+        <div className="mx-auto grid max-w-[82.5rem] items-center gap-12 px-4 sm:px-6 lg:grid-cols-[541px_minmax(0,698px)] lg:justify-between">
           <FramedPhoto src="/images/about-approach.jpg" alt="Our team planning a campaign" />
           <div>
             <SectionTitle>
@@ -97,11 +97,11 @@ export default function AboutPage() {
               {services.map((service, i) => (
                 <li
                   key={service.title}
-                  className={`flex gap-4 px-4 py-2 ${i === 0 ? "rounded-tl-[20px] rounded-br-[20px] border-2 border-white bg-brand/20" : ""}`}
+                  className={`flex gap-4 px-4 py-2 ${i === 0 ? "rounded-tl-[1.25rem] rounded-br-[1.25rem] border-2 border-white bg-brand/20" : ""}`}
                 >
                   <CheckIcon className="mt-3" />
                   <div>
-                    <h3 className="text-2xl font-semibold md:text-[35px] md:leading-tight">{service.title}</h3>
+                    <h3 className="text-2xl font-semibold md:text-[2.1875rem] md:leading-tight">{service.title}</h3>
                     <p className="mt-1 text-base md:text-xl">{service.body}</p>
                   </div>
                 </li>
@@ -121,14 +121,14 @@ function Statement({ title, body, image, reversed = false }: { title: string; bo
   return (
     <section className="pb-16 md:pb-24">
       <div
-        className={`mx-auto flex max-w-[1320px] flex-col items-center gap-10 px-4 sm:px-6 lg:justify-between ${reversed ? "lg:flex-row-reverse" : "lg:flex-row"}`}
+        className={`mx-auto flex max-w-[82.5rem] flex-col items-center gap-10 px-4 sm:px-6 lg:justify-between ${reversed ? "lg:flex-row-reverse" : "lg:flex-row"}`}
       >
-        <div className="relative aspect-[710/305] w-full max-w-[710px] overflow-hidden rounded-[14px] border-[5px] border-white">
+        <div className="relative aspect-[710/305] w-full max-w-[44.375rem] overflow-hidden rounded-[0.875rem] border-[5px] border-white">
           <Photo src={image} alt="" fill sizes="(min-width: 1024px) 710px, 100vw" className="object-cover" />
         </div>
-        <div className="w-full max-w-[497px]">
+        <div className="w-full max-w-[31.0625rem]">
           <SectionTitle className="text-brand">{title}</SectionTitle>
-          <p className="mt-4 text-lg md:text-[25px] md:leading-snug">{body}</p>
+          <p className="mt-4 text-lg md:text-[1.5625rem] md:leading-snug">{body}</p>
           <div className="mt-8">
             <OutlineButton href="/contact">Get A Quote</OutlineButton>
           </div>

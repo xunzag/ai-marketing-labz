@@ -24,12 +24,12 @@ export function WhyChooseUs() {
   return (
     <section className="relative isolate overflow-hidden border-y border-white/60 py-16 md:py-20">
       <Photo src="/images/why-bg.jpg" alt="" fill sizes="100vw" className="-z-10 object-cover opacity-15" />
-      <div className="mx-auto max-w-[1320px] px-4 sm:px-6">
-        <div className="mx-auto max-w-[1158px] text-center">
+      <div className="mx-auto max-w-[82.5rem] px-4 sm:px-6">
+        <div className="mx-auto max-w-[72.375rem] text-center">
           <SectionTitle>
             Why <span className="text-brand">Choose Us</span>
           </SectionTitle>
-          <p className="mt-4 text-lg font-semibold md:text-[25px]">
+          <p className="mt-4 text-lg font-semibold md:text-[1.5625rem]">
             We combine strategy, creativity, and technology to deliver tailored digital solutions that help businesses grow, improve
             efficiency, and achieve measurable results.
           </p>
@@ -40,11 +40,11 @@ export function WhyChooseUs() {
             {reasons.map((reason, i) => (
               <li
                 key={reason.title}
-                className={`flex gap-4 px-4 py-2 ${i === 0 ? "rounded-tl-[20px] rounded-br-[20px] border-2 border-white bg-brand/20" : ""}`}
+                className={`flex gap-4 px-4 py-2 ${i === 0 ? "rounded-tl-[1.25rem] rounded-br-[1.25rem] border-2 border-white bg-brand/20" : ""}`}
               >
                 <CheckIcon className="mt-3" />
                 <div>
-                  <h3 className="text-2xl font-semibold md:text-[35px] md:leading-tight">{reason.title}</h3>
+                  <h3 className="text-2xl font-semibold md:text-[2.1875rem] md:leading-tight">{reason.title}</h3>
                   <p className="mt-1 text-base md:text-xl">{reason.body}</p>
                 </div>
               </li>
@@ -60,9 +60,9 @@ export function WhyChooseUs() {
 // Photo with a thick dark border and a white card peeking out top-right.
 export function FramedPhoto({ src, alt, aspect = "aspect-[541/603]" }: { src: string; alt: string; aspect?: string }) {
   return (
-    <div className="relative mx-auto w-full max-w-[541px] pt-3 pr-3">
-      <div className="absolute top-0 right-0 h-full w-[96%] rounded-tr-[14px] bg-white" />
-      <div className={`relative ${aspect} overflow-hidden rounded-[14px] border-[7px] border-black bg-[#d9d9d9]`}>
+    <div className="relative mx-auto w-full max-w-[33.8125rem] pt-3 pr-3">
+      <div className="absolute top-0 right-0 h-full w-[96%] rounded-tr-[0.875rem] bg-white" />
+      <div className={`relative ${aspect} overflow-hidden rounded-[0.875rem] border-[7px] border-black bg-[#d9d9d9]`}>
         <Photo src={src} alt={alt} fill sizes="(min-width: 1024px) 541px, 100vw" className="object-cover" />
       </div>
     </div>

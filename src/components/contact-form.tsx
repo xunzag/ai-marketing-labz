@@ -42,7 +42,7 @@ export function ContactForm() {
       </label>
       <label className="block">
         <span className="sr-only">Message</span>
-        <textarea name="message" required rows={1} placeholder="Message" className={`${field} min-h-[76px] resize-y`} />
+        <textarea name="message" required rows={1} placeholder="Message" className={`${field} min-h-[4.75rem] resize-y`} />
       </label>
 
       <div className="flex flex-col-reverse items-start gap-4 sm:flex-row sm:items-center sm:justify-between">
@@ -61,7 +61,7 @@ export function ContactForm() {
         <button
           type="submit"
           disabled={status.kind === "sending"}
-          className="btn-fill h-[52px] w-[224px] shrink-0 rounded-[4px] border-[1.4px] border-white text-[21.5px] font-semibold text-brand transition-colors duration-500 hover:text-white disabled:opacity-60 sm:ml-auto"
+          className="btn-fill h-[3.25rem] w-[14rem] shrink-0 rounded-[0.25rem] border-[1.4px] border-white text-[1.3438rem] font-semibold text-brand transition-colors duration-500 hover:text-white disabled:opacity-60 sm:ml-auto"
         >
           {status.kind === "sending" ? "Sending…" : "Get A Touch"}
         </button>

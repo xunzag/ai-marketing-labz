@@ -15,10 +15,10 @@ const quickLinks = [
 export function Footer() {
   return (
     <footer className="bg-black font-poppins">
-      <div className="mx-auto grid max-w-[1600px] gap-12 px-4 pt-16 pb-12 sm:px-6 md:grid-cols-2 xl:grid-cols-[1.4fr_0.9fr_1.3fr_0.8fr] xl:gap-8">
+      <div className="mx-auto grid max-w-[100rem] gap-12 px-4 pt-16 pb-12 sm:px-6 md:grid-cols-2 xl:grid-cols-[1.4fr_0.9fr_1.3fr_0.8fr] xl:gap-8">
         <div className="flex flex-col items-center text-center md:items-start md:text-left xl:pl-10">
-          <Photo src="/images/logo.png" alt="AI Marketing LABZ" width={219} height={194} className="h-auto w-44 md:w-[219px]" />
-          <p className="mt-6 max-w-[384px] text-lg md:text-[21.5px]">
+          <Photo src="/images/logo.png" alt="AI Marketing LABZ" width={219} height={194} className="h-auto w-44 md:w-[13.6875rem]" />
+          <p className="mt-6 max-w-[24rem] text-lg md:text-[1.3438rem]">
             Learn more about our mission, values, and the team dedicated to driving your digital success.
           </p>
           <p className="mt-8 font-sans text-2xl font-extrabold uppercase">Follow us</p>
@@ -50,7 +50,7 @@ export function Footer() {
           </li>
           <li className="flex gap-4">
             <MapPin className="mt-1 size-6 shrink-0" />
-            <span className="max-w-[304px]">{contact.address}</span>
+            <span className="max-w-[19rem]">{contact.address}</span>
           </li>
         </FooterColumn>
 
@@ -73,7 +73,7 @@ export function Footer() {
           href={contact.whatsappHref}
           target="_blank"
           rel="noreferrer"
-          className="mx-auto flex max-w-[681px] items-center justify-between gap-4 rounded-[4px] border-2 border-white px-4 py-5 font-sans text-base font-bold uppercase transition hover:border-brand hover:text-brand sm:text-[21.5px]"
+          className="mx-auto flex max-w-[42.5625rem] items-center justify-between gap-4 rounded-[0.25rem] border-2 border-white px-4 py-5 font-sans text-base font-bold uppercase transition hover:border-brand hover:text-brand sm:text-[1.3438rem]"
         >
           <span>Get in touch</span>
           <span className="flex items-center gap-2">
@@ -83,7 +83,7 @@ export function Footer() {
         </a>
       </div>
 
-      <div className="bg-brand px-4 py-8 text-center font-sans text-lg font-medium md:text-[25px]">
+      <div className="bg-brand px-4 py-8 text-center font-sans text-lg font-medium md:text-[1.5625rem]">
         {new Date().getFullYear()} © Aimarketinglabz. All Rights Reserved.
       </div>
     </footer>
@@ -93,8 +93,8 @@ export function Footer() {
 function FooterColumn({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <div>
-      <h3 className="font-sans text-3xl font-semibold md:text-[35px]">{title}</h3>
-      <ul className="mt-8 space-y-8 text-lg font-medium md:text-[21.5px]">{children}</ul>
+      <h3 className="font-sans text-3xl font-semibold md:text-[2.1875rem]">{title}</h3>
+      <ul className="mt-8 space-y-8 text-lg font-medium md:text-[1.3438rem]">{children}</ul>
     </div>
   );
 }

@@ -18,7 +18,7 @@ export function Header() {
 
   return (
     <header className="absolute inset-x-0 top-0 z-40">
-      <div className="mx-auto flex max-w-[1594px] items-center justify-between gap-6 px-4 pt-6 sm:px-6 md:pt-8">
+      <div className="mx-auto flex max-w-[99.625rem] items-center justify-between gap-6 px-4 pt-6 sm:px-6 md:pt-8">
         <Link href="/" aria-label="AI Marketing LABZ home" className="shrink-0">
           <Photo src="/images/logo.png" alt="AI Marketing LABZ" width={69} height={61} priority />
         </Link>

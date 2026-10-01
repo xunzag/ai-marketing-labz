@@ -15,11 +15,11 @@ export function Accent({ text, highlight, className = "text-brand" }: { text: st
 }
 
 export function SectionTitle({ children, className = "" }: { children: ReactNode; className?: string }) {
-  return <h2 className={`text-3xl font-semibold leading-tight md:text-4xl xl:text-[45px] ${className}`}>{children}</h2>;
+  return <h2 className={`text-3xl font-semibold leading-tight md:text-4xl xl:text-[2.8125rem] ${className}`}>{children}</h2>;
 }
 
 export function Container({ children, className = "" }: { children: ReactNode; className?: string }) {
-  return <div className={`mx-auto w-full max-w-[1280px] px-4 sm:px-6 ${className}`}>{children}</div>;
+  return <div className={`mx-auto w-full max-w-[80rem] px-4 sm:px-6 ${className}`}>{children}</div>;
 }
 
 // "Let's Discuss" button: white outline, white label, a dot on a long line.
@@ -27,7 +27,7 @@ export function DiscussButton({ href = "/contact", label = "Let’s Discuss" }: 
   return (
     <Link
       href={href}
-      className="btn-fill inline-flex h-12 items-center gap-3 rounded-[5px] border-[1.5px] border-white px-3 text-lg font-semibold text-white md:h-[57px] md:text-2xl"
+      className="btn-fill inline-flex h-12 items-center gap-3 rounded-[0.3125rem] border-[1.5px] border-white px-3 text-lg font-semibold text-white md:h-[3.5625rem] md:text-2xl"
     >
       {label}
       <span className="relative flex h-2 w-20 items-center md:w-28" aria-hidden>
@@ -43,7 +43,7 @@ export function OutlineButton({ href, children }: { href: string; children: Reac
   return (
     <Link
       href={href}
-      className="btn-fill inline-flex h-12 min-w-[200px] items-center justify-center rounded-[4px] border-[1.5px] border-white px-8 text-lg font-semibold text-brand transition-colors duration-500 hover:text-white md:h-[57px] md:min-w-[248px] md:text-2xl"
+      className="btn-fill inline-flex h-12 min-w-[12.5rem] items-center justify-center rounded-[0.25rem] border-[1.5px] border-white px-8 text-lg font-semibold text-brand transition-colors duration-500 hover:text-white md:h-[3.5625rem] md:min-w-[15.5rem] md:text-2xl"
     >
       {children}
     </Link>
@@ -52,7 +52,7 @@ export function OutlineButton({ href, children }: { href: string; children: Reac
 
 export function CheckIcon({ className = "" }: { className?: string }) {
   return (
-    <svg viewBox="0 0 18 18" className={`size-[18px] shrink-0 ${className}`} aria-hidden>
+    <svg viewBox="0 0 18 18" className={`size-[1.125rem] shrink-0 ${className}`} aria-hidden>
       <rect width="18" height="18" rx="2" fill="#07afca" />
       <path d="M4.5 9.2l3 3 6-6.4" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
     </svg>

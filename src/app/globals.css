@@ -52,6 +52,15 @@ html {
   scroll-behavior: smooth;
 }
 
+/* The design is drawn at 1920px wide. On desktop and laptop screens the whole site
+   scales with the window (sizes are in rem), so a 1440px laptop shows the same
+   composition as a 1920px monitor instead of oversized text. */
+@media (min-width: 64rem) {
+  html {
+    font-size: clamp(12px, 0.8333vw, 16px);
+  }
+}
+
 body {
   background: #000;
   color: #fff;
